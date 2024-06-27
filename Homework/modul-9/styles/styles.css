@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 44px;
+  padding: 13px 0 0 0;
+}
+
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  border: 1px solid black;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  transition: color 300ms;
+  border: 1px solid black;
+  user-select: none;
+}
+
+.active {
+  color: black;
+  pointer-events: none;
+}
+
+.matched {
+  color: black;
+  pointer-events: none;
+}
+
+.button-wrapper {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.count-button {
+  display: block;
+  font-size: 18px;
+  padding: 8px 13px;
+}
+
+.button {
+  width: 100%;
+  height: auto;
+  max-width: 240px;
+  display: block;
+  font-size: 23px;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+  padding: 13px 23px;
+  border: 2px solid black;
+  border-radius: 30px;
+  outline: none;
+}
+
+.restart-button:focus {
+  outline: 1px solid black;
+}
